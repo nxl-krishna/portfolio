@@ -18,10 +18,10 @@ const RecentProjects = () => {
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]  flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={item.id}
           >
-           <a   href="https://github.com/nxl-krishna?tab=repositories"><PinContainer
+          <PinContainer
               title="visit"
-            
-            ></a>
+             href="https://github.com/nxl-krishna?tab=repositories"
+            >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]  mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -67,7 +67,7 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Project
+                    <a href="https://github.com/nxl-krishna?tab=repositories">Project</a>
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
